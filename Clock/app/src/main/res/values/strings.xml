@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clock</string>
+    <string name="twelve">12</string>
+    <string name="three">3</string>
+    <string name="six">6</string>
+    <string name="nine">9</string>
+</resources>
