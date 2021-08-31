@@ -9,14 +9,6 @@ import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
 
-
-private enum class FanSpeed {
-    TWELVE,
-    ONE,
-    TWO,
-    THREE
-}
-
 class MyClock(
     context: Context, attrs: AttributeSet
 ) : View(context, attrs) {
@@ -69,20 +61,6 @@ class MyClock(
         paint.color = Color.BLACK
         canvas.drawCircle((width / 2).toFloat(), (height / 2).toFloat(), 12f, paint)
     }
-
-    /*private fun drawLines(canvas: Canvas) {
-        paint.strokeWidth = 15f
-        val angle = (360 / SCALE_NUM).toFloat()
-        paint.color = Color.RED
-        var i = 0
-        while (i<12){
-            canvas.save()
-            canvas.rotate(i * angle)
-            canvas.drawPoint(0f,  -radius, paint )
-            canvas.restore()
-            i++
-        }
-    }*/
 
     private fun drawHourHand(canvas: Canvas, date: Float) {
         drawHand(canvas, date, "black", 15f, 80f)
